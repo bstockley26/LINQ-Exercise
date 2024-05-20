@@ -4,7 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var soccerTeams = new List<string>() { "Manchester City","Arsenal", "Chelsea", "Manchester United","Liverpool","Tottenham","Aston Villa"};
+
+            var nameLength = soccerTeams.OrderBy(team => team.Length);
+
+            foreach (string team in nameLength)
+            {
+               Console.WriteLine(team);
+            }
+
+            
         }
     }
 }
